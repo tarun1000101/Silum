@@ -67,6 +67,8 @@ namespace gpu{
         uint1024_t electric_field;
         uint1024_t magnetic_field;
         uint1024_t radius_of_EM_field;
+        uint1024_t frequency_of_vibration;
+        uint1024_t radiation_of_object;
         uint1024_t weight_of_object;
         uint1024_t number_of_vertices;
         uint1024_t graph_of_object [number_of_vertices];
