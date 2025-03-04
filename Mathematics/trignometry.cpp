@@ -1,9 +1,8 @@
 class trignometry{
     protected:
-
-    double sinusoidal = 0;
-    double cosinusoidal = 0;
-    double tangential = 0;
+    double sinusoidal = 0;//Height of the nose or sine.
+    double cosinusoidal = 0;//Length of the nostrils or cosine.
+    double tangential = 0;//Length of the noseline or tangential.
 
     public:
         double sinusoidal (double height, double length_of_tangent)
