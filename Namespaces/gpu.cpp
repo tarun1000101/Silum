@@ -1,11 +1,22 @@
 namespace gpu{
 
+    typedef uint8_t = "0x00";
+    typedef uint16_t = "0x0000";
+    typedef uint32_t = "0x00000000";
+    typedef uint64_t = "0x000000000000";
+    typedef uint128_t = "0x0000000000000000"; //It is declared as a string. Conversion needed to be represented as an unsigned integer in RAM.
     typedef uint512_t = "0x000000000000000000000000000000"; //It is declared as a string. So, you can convert it into a 512-bit unsinged integer when the compilier and the processor supports it.
-    typedef uint1024_t = "0x000000000000000000000000000000000000000000000000000000000000"; //New datatype uint1024_t of 1024 length bit. Declared as a string. Needs conversion to unsigned integer.
+    typedef uint1024_t = "0x000000000000000000000000000000000000000000000000000000000000"; //New datatype uint1024_t of 1024 bit length. Declared as a string. Conversion needed to represent as an unsigned integer in RAM.
     typedef uint1024_t luminosity = "0x000000000000000000000000000000000000000000000000000000000000"; //Light intensity on an object.
     typedef uint1024_t gradients = "0x000000000000000000000000000000000000000000000000000000000000"; //Image gradient.
     typedef uint1024_t shade = "0x000000000000000000000000000000000000000000000000000000000000"; //1024-bit shade of an object.
     typedef uint1024_t pixel = "0x000000000000000000000000000000000000000000000000000000000000"; //Pixel gradient intensity.
+    typedef uint1024_t colour = "0x000000000000000000000000000000000000000000000000000000000000"; //Colour value.
+
+    struct vector_element
+    {
+
+    };
     
     typedef struct int512_t
     {
@@ -97,18 +108,59 @@ namespace gpu{
 
     };
 
-    typedef struct fifth_dimension{
+    typedef struct fifth_dimension
+    {
         uint1024_t radius_of_energy_radiation;
         uint1024_t energy_field_matrix[radius_of_energy_radiation][radius_of_energy_radiation];
     };
 
-    typedef struct set{
+    typedef struct set
+    {
         uint1024_t number_of_elements;
         uint1024_t element_array[number_of_elements];
     };
 
-    typedef struct path_data{
+    typedef struct path_data_ten_bit
+    {
         string direction;
         float1024_t force_of_object;
+    };
+
+    typedef struct matrix //To do linear algebra and vector calculus in the GPU.
+    {
+        uint1024_t row;
+        uint1024_t column;
+        uint1024_t matrix[row][column];
+    };
+
+    typedef struct vector_sixty_four_byte
+    {
+        uint512_t number_of_elements;
+        uint512_t vector[number_of_elements];
+    };
+
+    typedef struct vector_one_hundered_twenty_eight_byte
+    {
+        uint1024_t number_of_elements;
+        uint1024_t vector[number_of_elements];
+    };
+
+    typedef struct vector_sixteen_byte
+    {
+        uint128_t number_of_elements;
+        uint128_t vector[number_of_elements];
+    };
+
+    typedef struct template_vector_data
+    {
+
+    };
+
+    template vector_1D <class vector_1D>
+    class vector_1D
+    {
+        public:
+            
+        vector_1D()
     };
 }
