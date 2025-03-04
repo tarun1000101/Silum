@@ -1,12 +1,5 @@
 namespace gpu{
 
-    typedef uint8_t = "0x00";
-    typedef uint16_t = "0x0000";
-    typedef uint32_t = "0x00000000";
-    typedef uint64_t = "0x000000000000";
-    typedef uint128_t = "0x0000000000000000"; //It is declared as a string. Conversion needed to be represented as an unsigned integer in RAM.
-    typedef uint512_t = "0x000000000000000000000000000000"; //It is declared as a string. So, you can convert it into a 512-bit unsinged integer when the compilier and the processor supports it.
-    typedef uint1024_t = "0x000000000000000000000000000000000000000000000000000000000000"; //New datatype uint1024_t of 1024 bit length. Declared as a string. Conversion needed to represent as an unsigned integer in RAM.
     typedef uint1024_t luminosity = "0x000000000000000000000000000000000000000000000000000000000000"; //Light intensity on an object.
     typedef uint1024_t gradients = "0x000000000000000000000000000000000000000000000000000000000000"; //Image gradient.
     typedef uint1024_t shade = "0x000000000000000000000000000000000000000000000000000000000000"; //1024-bit shade of an object.
@@ -15,7 +8,8 @@ namespace gpu{
 
     struct vector_element
     {
-
+        uint1024_t size_of_data;
+        char data[size_of_data];
     };
     
     typedef struct int512_t
@@ -151,16 +145,14 @@ namespace gpu{
         uint128_t vector[number_of_elements];
     };
 
-    typedef struct template_vector_data
+    template gpu_vector <class gpu_vector(data_size, data)>
+    class gpu_vector
     {
-
-    };
-
-    template vector_1D <class vector_1D>
-    class vector_1D
-    {
-        public:
-            
-        vector_1D()
+        gpu_vector(uint1024_t data_size, char *data)
+        {
+            vector_element element_container = new vector_element();
+            element_container.size_of_data = data_size;
+            element_container.data = this.data;
+        }
     };
 }
