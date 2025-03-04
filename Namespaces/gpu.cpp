@@ -86,24 +86,26 @@ namespace gpu{
         uint1024_t third_dimension [length_of_material];
     };
 
-    typedef time_vector
+    typedef struct fourth_dimension
     {
         uint1024_t time_flow;
         uint1024_t number_of_events;
         uint1024_t time_flow_array[number_of_events];
-    };
-
-    class vector_calculus{
-        public:
-            
-    };
-
-    class dijkstra
-    {
 
     };
 
-    class bellman_ford{
+    typedef struct fifth_dimension{
+        uint1024_t radius_of_energy_radiation;
+        uint1024_t energy_field_matrix[radius_of_energy_radiation][radius_of_energy_radiation];
+    };
 
+    typedef struct set{
+        uint1024_t number_of_elements;
+        uint1024_t element_array[number_of_elements];
+    };
+
+    typedef struct path_data{
+        string direction;
+        float1024_t force_of_object;
     };
 }
