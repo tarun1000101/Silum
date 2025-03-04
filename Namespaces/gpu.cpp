@@ -144,15 +144,4 @@ namespace gpu{
         uint128_t number_of_elements;
         uint128_t vector[number_of_elements];
     };
-
-    template gpu_vector <class gpu_vector(data_size, data)>
-    class gpu_vector
-    {
-        gpu_vector(uint1024_t data_size, char *data)
-        {
-            vector_element element_container = new vector_element();
-            element_container.size_of_data = data_size;
-            element_container.data = this.data;
-        }
-    };
 }
