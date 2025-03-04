@@ -27,8 +27,8 @@ namespace gpu{
 
     typedef struct gpu_information
     {
-        uint64_t gpu_start_address;
-        uint64_t gpu_end_address;
+        uint1024_t gpu_start_address_in_RAM;
+        uint1024_t gpu_end_address_in_RAM;
         int1024_t number_of_gpus;
         string gpu_names[number_of_gpus];
         int1024_t pcie_ids[number_of_gpus]; //Container for PCIE ids
@@ -37,6 +37,13 @@ namespace gpu{
 
     typedef struct gpu_data
     {
+        uint1024_t shader_image[];
+        uint1024_t        
+    };
+
+    typedef struct object_data
+    {
+        uint1024_t image [7680][4320];
         
     };
 }
