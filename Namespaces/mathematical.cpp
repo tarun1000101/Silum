@@ -1,20 +1,26 @@
 namespace mathematical{
 
-    typedef struct data_container
+    struct pointer{
+        pointer *end_node;
+        pointer *start_node;
+        pointer *next_node;
+        pointer *prev_node;
+    };
+
+    struct data_container
     {
         uint1024_t data_length;
         char data_array[data_length];
-    }
+    };
 
     template set<class set>
     class set{
-        
-        set(uint1024_t length_of_container, char *data)
+
+        char* insert_data(uint1024_t data_length, char *data_array)
         {
-            data_container dc;
-            dc.data_length = length_of_container;
-            dc.data = this.data;
-            dc = new data_container();
+            data_container dc = new data_container();
+            dc.data_length = data_length;
+            dc.data_array = data_array;
         }
-    }
+    };
 }
