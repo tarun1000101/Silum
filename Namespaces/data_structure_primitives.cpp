@@ -1,5 +1,5 @@
 namespace data_structure_primitives{
-    struct node
+    typedef struct node
     {
         long long int value;
         node *next;
