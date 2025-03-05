@@ -1,4 +1,4 @@
-using namespace mathematical;
+using namespace mathematics;
 
 class set_theory
 {
@@ -6,18 +6,15 @@ class set_theory
         data_container set_array = new data_container();
     public:
 
-        return_elements(string condition, long long int number, set)
+        return_data_container(long long int start_index, long long int end_index)
         {
             subset;
 
-            if (condition == "<")
+            for (int i = start_index; i < end_index; i++)
             {
-                for (int i = 0; i < )
-            }
-        }
 
-        return_data_container(long long int start_index, long long int end_index)
-        {
-            for 
+            }
+
+            return subset;
         }
 };

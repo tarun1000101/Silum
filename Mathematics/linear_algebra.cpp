@@ -5,9 +5,9 @@ class linear_alebra{
 
     private:
     public:
-        set<> return_subspace(long long int number_of_elements, long long int start_index, long long int end_index)
+        set<> return_subspace(long long int start_index, long long int end_index)
         {
-            for (long long int lli = 0; lli < number_of_elements; lli++)
+            for (long long int lli = start_index; lli < end_index; lli++)
             {
                 
             }
