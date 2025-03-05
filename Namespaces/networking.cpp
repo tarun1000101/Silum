@@ -7,4 +7,7 @@ namespace networking{
     int ACK;
     char *ipvfour_address;
     char *ipvsix_address;
+    char *packet;
+    char *socket_pcie_address;
+    char *socket_pcie_id;
 }
