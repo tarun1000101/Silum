@@ -1,10 +1,6 @@
 class numerical_methods{
     public:
 
-        double return_differentiation_result(){
-            
-        }
-
         double return_limit_result(double point){
             /** Explanation:
              *  Lim(variable -> point) = f(variable).
