@@ -24,6 +24,8 @@ namespace graphics_primitives{
     };
 
     typedef struct pyramid{
-
-    }
+        long long int base;
+        long long int height;
+        long long int z_height;
+    };
 }
