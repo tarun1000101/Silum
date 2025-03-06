@@ -1,13 +1,11 @@
 namespace graphics_primitives{
     
-    typedef struct cube
-    {
+    typedef struct cube{
         long long int length;
         uint1024_t object [length][length][lenght];
     };
 
-    typedef struct cuboid
-    {
+    typedef struct cuboid{
         long long int length;
         long long int breadth;
         long long int height;
@@ -20,8 +18,12 @@ namespace graphics_primitives{
     };
 
     typedef struct trapezoid{
-        long long int height;
-        long long int base;
-        long long int slope;
+        long long int height; // For 2D right angle triangle
+        long long int base; // For 2D right angle triangle
+        long long int slope; // For 3D trapezoid
     };
+
+    typedef struct pyramid{
+
+    }
 }

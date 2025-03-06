@@ -1,13 +1,11 @@
 class numerical_methods{
     public:
 
-        double return_differentiation_result()
-        {
+        double return_differentiation_result(){
             
         }
 
-        double return_limit_result(double point)
-        {
+        double return_limit_result(double point){
             /** Explanation:
              *  Lim(variable -> point) = f(variable).
              *  In this case, variable would be equal to the point in the curve or line.
@@ -16,14 +14,12 @@ class numerical_methods{
             return point;
         }
     
-        double evaluate_function(string expression, double point)
-        {
+        double evaluate_function(string expression, double point){
             double result = 0;
             return result;
         }
 
-        double single_variable_limit(double point, string expression)
-        {
+        double single_variable_limit(double point, string expression){
             /**  Function explanation:
             * Lim (variable -> point) (f(variable)) = f(point)  
             */
@@ -32,8 +28,7 @@ class numerical_methods{
             return result;
         }
 
-        double single_variable_integration(string expression, double point, double margin_of_error, double precision)
-        {
+        double single_variable_integration(string expression, double point, double margin_of_error, double precision){
             double differentiation_result = single_variable_differentiation(margin_of_error, point, expression);
             long single_variable_integration_result = 0;
             int precision_integer = 0;
@@ -48,8 +43,7 @@ class numerical_methods{
             return single_variable_integration_result;
         }
 
-        double multivariable_integration(string expression1, string expression2, double x_point1, double x_point2, double y_point1, double y_point2, double margin_of_error_point1, double margin_of_error_point2, double dx_precision, double dy_precision)
-        {
+        double multivariable_integration(string expression1, string expression2, double x_point1, double x_point2, double y_point1, double y_point2, double margin_of_error_point1, double margin_of_error_point2, double dx_precision, double dy_precision){
             /** Explanation of below statements:
             * Integration is analogus to addtion.
             * Differentiation is analogus to subtraction.
@@ -68,8 +62,7 @@ class numerical_methods{
             return multivariable_integration_result;
         }
 
-        double single_variable_differentiation (double margin_of_error, double point, string expression)
-        {
+        double single_variable_differentiation (double margin_of_error, double point, string expression){
             double differentiation_result = (evaluate_function(expression, point+margin_of_error) - evaluate_function(expression, margin_of_error))/ evaluate_function (expression, margin_of_error);
             return differentiation_result;
         }

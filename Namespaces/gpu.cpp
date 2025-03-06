@@ -6,14 +6,12 @@ namespace gpu{
     typedef uint1024_t pixel = "0x000000000000000000000000000000000000000000000000000000000000"; //Pixel gradient intensity.
     typedef uint1024_t colour = "0x000000000000000000000000000000000000000000000000000000000000"; //Colour value.
 
-    struct vector_element
-    {
+    typedef struct vector_element{
         uint1024_t size_of_data;
         char data[size_of_data];
     };
     
-    typedef struct int512_t
-    {
+    typedef struct int512_t{
         uint512_t length_of_number;
         char number[length_of_number];
     };
