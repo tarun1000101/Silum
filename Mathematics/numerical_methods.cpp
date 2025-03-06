@@ -29,6 +29,11 @@ class numerical_methods{
         }
 
         double single_variable_integration(string expression, double point, double margin_of_error, double precision){
+
+            /**Explanation of function
+             * Evaluates the infinitismally small value of the function and then, adds them up.
+             */
+
             double differentiation_result = single_variable_differentiation(margin_of_error, point, expression);
             long single_variable_integration_result = 0;
             int precision_integer = 0;
