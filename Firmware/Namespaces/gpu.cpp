@@ -87,31 +87,6 @@ namespace gpu{
         uint1024_t time_flow_array[number_of_events];
     };
 
-    /*
-    *   RAM is not cheap.
-    *   Storage is not cheap.
-    *   Microprocessors are not cheap.
-    *   So are GPUs.
-    */
-
-    /*
-    * 1 + 9 + 9 + 0 = 10 = 1 + 0 = 1 --> Sun.
-    * 2 + 0 + 0 + 0 = 2 --> Moon.
-    * 2 + 0 + 1 + 0 = 3 --> Mercury.
-    * 2 + 0 + 2 + 0 = 4 --> Conscious and Subconsious.
-    * 2 + 0 + 3 + 0 = 5 --> Mars.
-    * 2 + 0 + 4 + 0 = 6 --> Jupiter.
-    * 2 + 0 + 5 + 0 = 7 --> Uranus.
-    * 2 + 0 + 6 + 0 = 8 --> Venus.
-    * 2 + 0 + 7 + 0 = 9 --> Saturn.
-    * 2 + 0 + 8 + 0 = 10 = 1 + 0 --> During this time, Neptunes are going to be born.
-    * 2 + 0 + 9 + 0 = 11 + 1 + 1 --> During this time, Plutos are going to be born
-    * 
-    * The above numbers correspond to decades.
-    * 
-    * Using that logic, these are people are going to be born during that time.  
-    */
-
     typedef struct set
     {
         uint1024_t number_of_elements;
