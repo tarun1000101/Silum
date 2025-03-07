@@ -69,44 +69,7 @@ namespace gpu{
         uint1024_t graph_of_object [number_of_vertices];
         uint1024_t mass_of_object;
     };
-
-    typedef struct object_free_body_motion{
-        uint1024_t gyration;
-        uint1024_t gravitational_pull;
-        uint1024_t accleration;
-    };
-
-    typedef struct accelrometer{
-        uint1024_t macroscopic_change_in_x_coordinate;
-        uint1024_t macroscopic_change_in_y_coordinate;
-        uint1024_t macroscopic_change_in_z_coordinate;
-        uint1024_t microscopic_change_in_x_coordinate;
-        uint1024_t microscopic_change_in_y_coordinate;
-        uint1024_t microscopic_change_in_z_coordinate;
-    };
-
-    typedef struct gyroscope{
-        uint1024_t change_in_x_degree;
-        uint1024_t change_in_y_degree;
-        uint1024_t change_in_z_degree;
-    };
-
-    typedef struct energy_in_an_object{
-        uint1024_t height_of_an_object;
-        uint1024_t pressure_exerted_by_an_object;
-        uint1024_t gravitation;
-        uint1024_t speed_of_light;
-        uint1024_t energy_in_an_object = ((height_of_an_object * pressure_exerted_by_an_object * speed_of_light)/ gravitation);
-    };
-
-    typedef struct gravitational_field_of_an_object{
-        const double universal_gravitational_constant = 9.8;
-        uint1024_t mass_of_object1;
-        uint1024_t mass_of_object2;
-        uint1024_t distance_between_objects;
-        uint1024_t gravitiational_constant_of_an_object = (universal_gravitational_constant * mass_of_object1 * mass_of_object2)/distance_between_objects;
-    };
-
+    
     typedef struct gpu_vector
     {
         uint1024_t length_of_vector;
@@ -136,7 +99,17 @@ namespace gpu{
     * 2 + 0 + 0 + 0 = 2 --> Moon.
     * 2 + 0 + 1 + 0 = 3 --> Mercury.
     * 2 + 0 + 2 + 0 = 4 --> Conscious and Subconsious.
-    * 2 + 0 + 3 + 0 = 5 -->  
+    * 2 + 0 + 3 + 0 = 5 --> Mars.
+    * 2 + 0 + 4 + 0 = 6 --> Jupiter.
+    * 2 + 0 + 5 + 0 = 7 --> Uranus.
+    * 2 + 0 + 6 + 0 = 8 --> Venus.
+    * 2 + 0 + 7 + 0 = 9 --> Saturn.
+    * 2 + 0 + 8 + 0 = 10 = 1 + 0 --> During this time, Neptunes are going to be born.
+    * 2 + 0 + 9 + 0 = 11 + 1 + 1 --> During this time, Plutos are going to be born
+    * 
+    * The above numbers correspond to decades.
+    * 
+    * Using that logic, these are people are going to be born during that time.  
     */
 
     typedef struct set
