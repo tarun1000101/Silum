@@ -10,30 +10,15 @@ namespace gpu{
         uint1024_t size_of_data;
         char data[size_of_data];
     };
-    
-    typedef struct int512_t{
-        uint512_t length_of_number;
-        char number[length_of_number];
-    };
 
-    typedef struct int1024_t{
-        uint1024_t length_of_number;
-        char number[length_of_number];
+    typedef struct display_depth{
+        long long int bit_depth;
+        char image_to_send[bit_depth][bit_depth];
     };
 
     typedef struct string{
         uint1024_t number_of_characters;
         char array[number_of_characters];
-    };
-
-    typedef struct float512_t{
-        uint512_t integer;
-        uint512_t fraction;
-    };
-
-    typedef struct float1024_t{
-        uint1024_t integer;
-        uint1024_t fraction;
     };
 
     typedef struct gpu_information{
@@ -54,22 +39,6 @@ namespace gpu{
         uint1024_t pixel_saturation[7680][4320];
     };
 
-    typedef struct object_data{
-        uint1024_t image [7680][4320];
-        uint1024_t x_coordinate;
-        uint1024_t y_coordinate;
-        uint1024_t z_coordinate;
-        uint1024_t electric_field;
-        uint1024_t magnetic_field;
-        uint1024_t radius_of_EM_field;
-        uint1024_t frequency_of_vibration;
-        uint1024_t radiation_of_object;
-        uint1024_t weight_of_object;
-        uint1024_t number_of_vertices;
-        uint1024_t graph_of_object [number_of_vertices];
-        uint1024_t mass_of_object;
-    };
-    
     typedef struct gpu_vector
     {
         uint1024_t length_of_vector;
